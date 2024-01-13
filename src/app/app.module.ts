@@ -7,16 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TopoComponent,
-    HomeComponent,
-    RodapeComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, TopoComponent, HomeComponent, RodapeComponent],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
