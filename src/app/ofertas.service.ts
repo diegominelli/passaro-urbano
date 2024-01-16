@@ -25,8 +25,6 @@ export class OfertasService {
       .get(`http://localhost:3000/ofertas?id=${id}`)
       .toPromise()
       .then((resposta: any) => {
-        console.log(resposta[0]);
-
         return resposta[0];
       });
   }
