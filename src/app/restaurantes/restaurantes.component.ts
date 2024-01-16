@@ -9,13 +9,15 @@ import { Oferta } from '../shared/oferta.model';
   providers: [OfertasService],
 })
 export class RestaurantesComponent implements OnInit {
+  public ofertas: Oferta[];
+
   constructor(private ofertasService: OfertasService) {}
 
   ngOnInit(): void {
     this.ofertasService
       .getOfertasPorCategoria('restaurante')
       .then((ofertas: Oferta[]) => {
-        console.log(ofertas);
+        this.ofertas = ofertas;
       });
   }
 }
