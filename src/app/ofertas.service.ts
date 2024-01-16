@@ -8,7 +8,7 @@ export class OfertasService {
 
   public getOfertas(): Promise<Oferta[]> {
     return this.http
-      .get('http://localhost:3000/ofertas ')
+      .get('http://localhost:3000/ofertas')
       .toPromise()
       .then((resposta: any) => resposta);
   }
