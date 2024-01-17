@@ -12,6 +12,8 @@
             type="text"
             class="form-control"
             placeholder="Pesquise por ofertas..."
+            #termoDaPesquisa
+            (keyup)="pesquisa(termoDaPesquisa.value)"
           />
         </div>
         <div class="col-md-2">
