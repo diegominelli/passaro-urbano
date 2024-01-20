@@ -7,6 +7,7 @@ import {
   switchMap,
   of,
   distinctUntilChanged,
+  catchError,
 } from 'rxjs';
 import { Oferta } from '../shared/oferta.model';
 
@@ -32,8 +33,13 @@ export class TopoComponent implements OnInit {
           return of<Oferta[]>([]);
         }
         return this.ofertasService.pesquisaOfertas(termo);
+      }),
+      catchError((erro) => {
+        console.log(erro);
+        return of<Oferta[]>([]);
       })
     );
+
     this.ofertas.subscribe((ofertas: Oferta[]) => console.log(ofertas));
   }
 
