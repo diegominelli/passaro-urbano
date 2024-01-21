@@ -13,6 +13,7 @@ import { ROUTES } from './app.routes';
 import { OfertaComponent } from './oferta/oferta.component';
 import { ComoUsarComponent } from './oferta/como-usar/como-usar.component';
 import { OndeFicaComponent } from './oferta/onde-fica/onde-fica.component';
+import { DescricaoReduzida } from './util/descricao-reduzida.pipe';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 registerLocaleData(localePt);
@@ -28,6 +29,7 @@ registerLocaleData(localePt);
     OfertaComponent,
     ComoUsarComponent,
     OndeFicaComponent,
+    DescricaoReduzida,
   ],
   imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(ROUTES)],
   providers: [{ provide: LOCALE_ID, useValue: 'pt' }],
