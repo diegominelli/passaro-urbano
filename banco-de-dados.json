@@ -7,7 +7,7 @@
       "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
       "anunciante": "Original Burger",
       "valor": 29.9,
-      "destaque": true,
+      "destaque": "true",
       "imagens": [
         { "url": "/assets/ofertas/1/img1.jpg" },
         { "url": "/assets/ofertas/1/img2.jpg" },
@@ -22,7 +22,7 @@
       "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
       "anunciante": "Mexicana",
       "valor": 32.9,
-      "destaque": true,
+      "destaque": "true",
       "imagens": [
         { "url": "/assets/ofertas/2/img1.jpg" },
         { "url": "/assets/ofertas/2/img2.jpg" },
@@ -37,7 +37,7 @@
       "descricao_oferta": "Pizza Grande, Mussarela, Marguerita ou outras!",
       "anunciante": "Nossa Pizza",
       "valor": 21.9,
-      "destaque": false,
+      "destaque": "false",
       "imagens": [
         { "url": "/assets/ofertas/3/img1.jpg" },
         { "url": "/assets/ofertas/3/img2.jpg" },
@@ -52,7 +52,7 @@
       "descricao_oferta": "Diversão garantida com piscinas, trilhas e muito mais.",
       "anunciante": "Estância das águas",
       "valor": 31.9,
-      "destaque": true,
+      "destaque": "true",
       "imagens": [
         { "url": "/assets/ofertas/4/img1.jpg" },
         { "url": "/assets/ofertas/4/img2.jpg" },
@@ -69,7 +69,7 @@
       "descricao_oferta": "Bateria de Kart de 30 minutos.",
       "anunciante": "Speed Kart",
       "valor": 54.9,
-      "destaque": false,
+      "destaque": "false",
       "imagens": [
         { "url": "/assets/ofertas/5/img1.jpg" },
         { "url": "/assets/ofertas/5/img2.jpg" }
@@ -82,7 +82,7 @@
       "descricao_oferta": "Sessão de tiro dinâmico com Instrutor, Estande, Alvo e Equipamentos.",
       "anunciante": "Academia de Tiro",
       "valor": 89.9,
-      "destaque": false,
+      "destaque": "false",
       "imagens": [
         { "url": "/assets/ofertas/6/img1.jpg" },
         { "url": "/assets/ofertas/6/img2.jpg" }
