@@ -192,6 +192,34 @@
       "endereco": "Garcia Bento",
       "formaPagamento": "debito",
       "numero": "398"
+    },
+    {
+      "id": "4072",
+      "complemento": "Casa",
+      "endereco": "Rua Antônio Parreiras",
+      "formaPagamento": "dinheiro",
+      "numero": "968"
+    },
+    {
+      "id": "9db9",
+      "complemento": "Casa",
+      "endereco": "Garcia Bento",
+      "formaPagamento": "dinheiro",
+      "numero": "398"
+    },
+    {
+      "id": "408f",
+      "complemento": "Casa",
+      "endereco": "Garcia Bento",
+      "formaPagamento": "dinheiro",
+      "numero": "398"
+    },
+    {
+      "id": "3027",
+      "complemento": "Casa",
+      "endereco": "Garcia Bento",
+      "formaPagamento": "dinheiro",
+      "numero": "398"
     }
   ]
 }
