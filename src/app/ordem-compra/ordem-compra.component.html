@@ -203,7 +203,11 @@
       </div>
 
       <hr />
-      <button type="submit" class="btn btn-primary btn-lg">
+      <button
+        type="submit"
+        class="btn btn-primary btn-lg"
+        [disabled]="formEstado"
+      >
         Cofirmar compra
       </button>
     </form>
