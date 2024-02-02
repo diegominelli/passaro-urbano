@@ -206,6 +206,13 @@
       "endereco": "Rua Tóquio Marine",
       "formaPagamento": "debito",
       "numero": "12580"
+    },
+    {
+      "id": "ad42",
+      "complemento": "Casa",
+      "endereco": "Rua Marselhas",
+      "formaPagamento": "dinheiro",
+      "numero": "195"
     }
   ]
 }

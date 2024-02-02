@@ -10,6 +10,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   providers: [OrdemCompraService],
 })
 export class OrdemCompraComponent implements OnInit {
+  public idPedidoCompra: number;
+
   public formulario: FormGroup = new FormGroup({
     complemento: new FormControl(null),
     endereco: new FormControl(null, [
@@ -30,6 +32,26 @@ export class OrdemCompraComponent implements OnInit {
   ngOnInit(): void {}
 
   public confirmarCompra(): void {
-    console.log(this.formulario);
+    if (this.formulario.status === 'INVALID') {
+      console.log('formulário está inválido');
+
+      this.formulario.get('complemento').markAllAsTouched();
+      this.formulario.get('endereco').markAllAsTouched();
+      this.formulario.get('formaPagamento').markAllAsTouched();
+      this.formulario.get('numero').markAllAsTouched();
+    } else {
+      let pedido: Pedido = new Pedido(
+        this.formulario.value.complemento,
+        this.formulario.value.endereco,
+        this.formulario.value.formaPagamento,
+        this.formulario.value.numero
+      );
+      this.ordemCompraService
+        .efetivarCompra(pedido)
+        .subscribe((idPedido: number) => {
+          this.idPedidoCompra = idPedido;
+          console.log(this.idPedidoCompra);
+        });
+    }
   }
 }
