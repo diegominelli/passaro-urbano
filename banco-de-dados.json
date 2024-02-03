@@ -213,6 +213,13 @@
       "endereco": "Rua Marselhas",
       "formaPagamento": "dinheiro",
       "numero": "195"
+    },
+    {
+      "id": "9a88",
+      "complemento": "Casa",
+      "endereco": "Rua Flora Mattos",
+      "formaPagamento": "debito",
+      "numero": "963"
     }
   ]
 }
