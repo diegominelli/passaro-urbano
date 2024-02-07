@@ -1,3 +1,4 @@
+import { CarrinhoService } from './../carrinho.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { OfertasService } from '../ofertas.service';
@@ -7,17 +8,19 @@ import { Oferta } from '../shared/oferta.model';
   selector: 'app-oferta',
   templateUrl: './oferta.component.html',
   styleUrls: ['./oferta.component.scss'],
-  providers: [OfertasService],
+  providers: [OfertasService, CarrinhoService],
 })
 export class OfertaComponent implements OnInit, OnDestroy {
   public oferta: Oferta;
 
   constructor(
     private route: ActivatedRoute,
-    private ofertasService: OfertasService
+    private ofertasService: OfertasService,
+    private carrinhoService: CarrinhoService
   ) {}
 
   ngOnInit(): void {
+    console.log('Array', this.carrinhoService.exibirItens());
     this.route.params.subscribe((parametros: Params) => {
       this.ofertasService
         .getOfertaPorId(parametros['id'])
