@@ -1,7 +1,9 @@
 import { ItemCarrinho } from './shared/item-carrinho.model';
 
-class CarrinhoService {
+export class CarrinhoService {
   public itens: ItemCarrinho[] = [];
-}
 
-export default CarrinhoService;
+  public exibirItens(): ItemCarrinho[] {
+    return this.itens;
+  }
+}
