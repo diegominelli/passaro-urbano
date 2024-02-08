@@ -65,4 +65,8 @@ export class CarrinhoService {
       }
     }
   }
+
+  public limparCarrinho(): void {
+    this.itens = [];
+  }
 }
